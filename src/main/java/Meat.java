@@ -1,4 +1,4 @@
-public class Meat extends Food{
+public class Meat extends Food implements Discountable {
 
 
 
@@ -8,5 +8,9 @@ public class Meat extends Food{
         this.isVegetarian = true;
     }
 
+    @Override
+    public int getDiscount(int discount) {
+        return 0;
+    }
 }
 
